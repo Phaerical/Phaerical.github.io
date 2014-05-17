@@ -6,12 +6,6 @@
 
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
-    <!-- AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.6/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.6/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.6/angular-sanitize.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.6/angular-route.min.js"></script>
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
@@ -20,30 +14,254 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,600,700' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
 
     <!-- Custom Styles -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/animations.css" rel="stylesheet" type="text/css">
 
-    <!-- Angular UI Bootstrap -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <title>Edward Truong - Portfolio</title>
 
-    <!-- Angular UI Router -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script>
+        $(document).ready(function($)
+        {
+            // Smooth scrolling
+            $(".scroll").click(function(event){     
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+            });
 
-    <!-- Angular Modules -->
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/directives.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/services.js"></script>
-
-    <title>Portfolio</title>
+            // Tooltips
+            $(".tool-tip").tooltip ();
+        });
+    </script>
 </head>
 
-<body>
-    <div ui-view class="slide-vertical"></div>
+<body data-spy="scroll" data-target="#sidebar">
+
+<div class="container-fluid splash" id="top">
+    <div class="row transparent">
+        <div class="col-sm-12">
+            <div class="header">
+                <h1>Hi, I'm <b>Edward Truong.</b></h1>
+                <h2>Software Developer. Website Designer.</h2>
+            </div>
+            <ul class="ul-splash">
+                <li><a href="#about" class="scroll">
+                    <i class="fa fa-user fa-splash"></i><br />ABOUT ME</a>
+                </li>
+                <li><a href="#skills" class="scroll">
+                    <i class="fa fa-bar-chart-o fa-splash"></i><br />SKILLS</a>
+                </li>
+                <li><a href="#projects" class="scroll">
+                    <i class="fa fa-laptop fa-splash"></i><br />PROJECTS</a>
+                </li>
+                <li><a href="#contact" class="scroll">
+                    <i class="fa fa-envelope fa-splash"></i><br />CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-pad" id="about">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2>About <b>ME</b></h2>
+            <p>
+                My name is Edward Truong and I'm currently a second year student, studying Computer Science at the University of Waterloo.<br><br>
+                I really enjoy doing digital design and programming. When I was at the age of 11, I grew a passion for coding and it never once disappeared. On my spare time, I still find myself messing around with different types of projects and learning more about new or upcoming technologies or trends.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-pad container-red">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+        <div class="col-sm-4" style="padding: 0 15px">
+            <center>
+                <div class="circle"><i class="fa fa-pencil fa-3x"></i></div>
+                <h3>DESIGNING</h3>
+                <p>Asthetics are very important. I always try to keep on top of recent design trends, looking for things to incorporate into my projects.</p>
+            </center>
+        </div>
+
+        <div class="col-sm-4" style="padding: 0 15px">
+            <center>
+                <div class="circle"><i class="fa fa-terminal fa-3x"></i></div>
+                <h3>DEVELOPING</h3>
+                <p>Software development is one of my most favourite things to do. I have experience with a variety of frameworks and  languages.</p>
+            </center>
+        </div>
+
+        <div class="col-sm-4" style="padding: 0 15px">
+            <center>
+                <div class="circle"><i class="fa fa-book fa-3x"></i></div>
+                <h3>LEARNING</h3>
+                <p>I enjoy learning new concepts at a quick pace, whether I'm dealing with an unfamiliar environment or new programming language.</p>
+            </center>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-pad container-white" id="skills">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2>Skills</h2>
+            <p>
+                Programming Languages
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="width:90%">
+                        HTML
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" style="width:75%">
+                        CSS
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" style="width:60%">
+                        PHP
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" style="width:65%">
+                        JavaScript
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" style="width:70%">
+                        SQL
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" style="width:85%">
+                        Java
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" style="width:35%">
+                        C / C++
+                    </div>
+                </div>
+
+                Frameworks & Others
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>NodeJS</li>
+                    <li>AngularJS</li>
+                    <li>JavaServer Faces (JSF)</li>
+                    <li>Android SDK</li>
+                </ul>
+            </p>
+
+            <button class="btn btn-default btn-lg"><i class="fa fa-download fa-lg"></i> Download Resume</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-pad" id="projects">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h2>Projects</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-sm-12">
+            <img style="" class="img-responsive project-img" src="img/graveblade.jpg" />
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <h2>GraveBlade<br><small>August 2013 - September 2013</small></h2>
+            <p>
+            GraveBlade is a 2D platformer game consisting of RPG elements such as leveling and equipments.
+            It is written in Java and built using the <b>LibGDX</b> development framework, which allows for cross-platform deployments to both PC and Android.
+            </p>
+            <button class="btn btn-primary"><i class="fa fa-github fa-lg"></i> View on GitHub</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 col-sm-12">
+            <h2>Flat Design<br><small>August 2013 - September 2013</small></h2>
+            <p>
+            GraveBlade is a 2D platformer game consisting of RPG elements such as leveling and equipments.
+            It is written in Java and built using the <b>LibGDX</b> development framework, which allows for cross-platform deployments to both PC and Android.
+            </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+            <img class="img-responsive project-img" src="img/template.png" />
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-pad container-red" id="contact">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <h3>Contact Me</h3>
+            <p>Feel free to send me any questions, concerns, or comments.
+            <form>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="NAME" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="EMAIL" />
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="MESSAGE" rows="6"></textarea>
+                </div>
+                <button class="btn btn-outline btn-lg">SEND</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid container-pad">
+    <div class="row">
+        <div class="col-sm-10 col-sm-offset-1">
+            <p> </p>
+        </div>
+    </div>
+</div>
+
+<div id="sidebar" data-spy="affix" data-offset-top="500">
+    <ul class="nav">
+        <li class="active"><a href="#top" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
+            title="Back to Top"><i class="fa fa-home fa-2x fa-fw"></i></a></li>
+        <li><a href="#about" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
+            title="About Me"><i class="fa fa-user fa-2x fa-fw"></i></a></li>
+        <li><a href="#skills" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
+            title="Skills"><i class="fa fa-bar-chart-o fa-2x fa-fw"></i></a></li>
+        <li><a href="#projects" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
+            title="Projects"><i class="fa fa-laptop fa-2x fa-fw"></i></a></li>
+        <li><a href="#contact" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
+            title="Contact"><i class="fa fa-envelope fa-2x fa-fw"></i></a></li>
+        <hr>
+        <li><a href="https://github.com/Phaerical" target="_blank" class="tool-tip"
+            data-toggle="tooltip" data-placement="left" title="GitHub">
+            <i class="fa fa-github fa-2x fa-fw"></i></a>
+        </li>
+        <li><a href="" target="_blank" class="tool-tip"
+            data-toggle="tooltip" data-placement="left" title="Resume">
+            <i class="fa fa-file-text fa-2x fa-fw"></i></a>
+        </li>
+    </ul>
+</div>
+
+
 </body>
 
 </html>
