@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="app">
+<html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,18 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
     <!-- Font -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 
     <!-- Custom Styles -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/animations.css" rel="stylesheet" type="text/css">
-
-    <!-- Light Box -->
-    <script src="js/lightbox.min.js"></script>
-    <link href="css/lightbox.css" rel="stylesheet" type="text/css">
 
     <title>Edward Truong - Portfolio</title>
 
@@ -34,128 +30,125 @@
                 event.preventDefault();
                 $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
             });
-
-            // Tooltips
-            $(".tool-tip").tooltip ();
         });
     </script>
 </head>
 
-<body data-spy="scroll" data-target="#sidebar">
+<body>
 
-<div class="container-fluid splash" id="top">
-    <div class="row transparent">
-        <div class="col-sm-12">
-            <div class="header">
-                <h1>Hi, I'm <b>Edward Truong.</b></h1>
-                <h2>Software Developer. Website Designer.</h2>
-            </div>
-            <ul class="ul-splash">
-                <li><a href="#about" class="scroll">
-                    <i class="fa fa-user fa-splash"></i><br />ABOUT ME</a>
-                </li>
-                <li><a href="#skills" class="scroll">
-                    <i class="fa fa-bar-chart-o fa-splash"></i><br />SKILLS</a>
-                </li>
-                <li><a href="#projects" class="scroll">
-                    <i class="fa fa-laptop fa-splash"></i><br />PROJECTS</a>
-                </li>
-                <li><a href="#contact" class="scroll">
-                    <i class="fa fa-envelope fa-splash"></i><br />CONTACT</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+<div class="bg-img"></div>
 
-<div class="container-fluid container-pad" id="about">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-            <h2>About <b>ME</b></h2>
-            <p>
-                My name is Edward Truong and I'm currently a second year student, studying Computer Science at the University of Waterloo.<br><br>
-                I really enjoy doing digital design and programming. When I was at the age of 11, I grew a passion for coding and it never once disappeared. On my spare time, I still find myself messing around with different types of projects and learning more about new or upcoming technologies or trends.
-            </p>
-        </div>
-    </div>
-</div>
+<header id="top" class="landing-img">
+	<div class="landing-bg">
+		<div class="landing-nav">
+			<ul>
+				<li><a href="#about" class="scroll">ABOUT</a></li>
+				<li><a href="#skills" class="scroll">SKILLS</a></li>
+				<li><a href="#work" class="scroll">WORK</a></li>
+				<li><a href="#contact" class="scroll">CONTACT</a></li>
+			</ul>
+		</div>
+		<div class="landing-text">
+			<h1>Hi, I'm <b>Edward Truong.</b></h1>
+			<h2>Software Developer. Website Designer.</h2>
+		</div>
+		<div class="landing-button">
+			<a href="#about" class="scroll"><i class="fa fa-angle-down fa-3x"></i></a>
+		</div>
+	</div>
+</header>
 
-<div class="container-fluid container-pad container-red">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-        <div class="col-sm-4" style="padding: 0 15px">
-            <center>
-                <div class="circle"><i class="fa fa-pencil fa-3x"></i></div>
-                <h3>DESIGNING</h3>
-                <p>Asthetics are very important. I always try to keep on top of recent design trends, looking for things to incorporate into my projects.</p>
-            </center>
-        </div>
+<section id="about">
+	<div class="container-fluid container-block bg-light">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-1">
+				<h2>ABOUT ME</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="col-sm-4">
+				<div class="profile-picture"></div>
+			</div>
+		</div>
+	</div>
 
-        <div class="col-sm-4" style="padding: 0 15px">
-            <center>
-                <div class="circle"><i class="fa fa-terminal fa-3x"></i></div>
-                <h3>DEVELOPING</h3>
-                <p>Software development is one of my most favourite things to do. I have experience with a variety of frameworks and  languages.</p>
-            </center>
-        </div>
+	<div class="container-fluid container-block bg-color">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+		        <div class="col-sm-4">
+		        	<div class="small-block">
+		                <div class="circle"><i class="fa fa-pencil fa-3x"></i></div>
+		                <h3>DESIGNING</h3>
+		                <p>Asthetics are very important. I always try to keep on top of recent design trends, looking for things to incorporate into my projects.</p>
+		            </div>
+		        </div>
 
-        <div class="col-sm-4" style="padding: 0 15px">
-            <center>
-                <div class="circle"><i class="fa fa-book fa-3x"></i></div>
-                <h3>LEARNING</h3>
-                <p>I enjoy learning new concepts at a quick pace, whether I'm dealing with an unfamiliar environment or new programming language.</p>
-            </center>
-        </div>
-        </div>
-    </div>
-</div>
+		        <div class="col-sm-4">
+		        	<div class="small-block">
+		                <div class="circle"><i class="fa fa-terminal fa-3x"></i></div>
+		                <h3>DEVELOPING</h3>
+		                <p>Software development is one of my most favourite things to do. I have experience with a variety of frameworks and  languages.</p>
+		            </div>
+		        </div>
 
-<div class="container-fluid container-pad container-white" id="skills">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-            <h2>Skills</h2>
+		        <div class="col-sm-4">
+		        	<div class="small-block">
+		                <div class="circle"><i class="fa fa-book fa-3x"></i></div>
+		                <h3>LEARNING</h3>
+		                <p>I enjoy learning new concepts at a quick pace, whether I'm dealing with an unfamiliar environment or new programming language.</p>
+		            </div>
+		        </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="skills">
+	<div class="container-fluid container-block bg-light">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+            <h2>SKILLS</h2>
             <p>
                 Programming Languages
 
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" style="width:90%">
-                        HTML
+                        <h3>HTML</h3>
                     </div>
                 </div>
 
                 <div class="progress">
                     <div class="progress-bar progress-bar-info" style="width:75%">
-                        CSS
+                        <h3>CSS</h3>
                     </div>
                 </div>
 
                 <div class="progress">
                     <div class="progress-bar progress-bar-warning" style="width:60%">
-                        PHP
+                        <h3>PHP</h3>
                     </div>
                 </div>
 
                 <div class="progress">
                     <div class="progress-bar progress-bar-warning" style="width:65%">
-                        JavaScript & jQuery
+                        <h3>JavaScript & jQuery</h3>
                     </div>
                 </div>
 
                 <div class="progress">
                     <div class="progress-bar progress-bar-info" style="width:70%">
-                        SQL
+                        <h3>SQL</h3>
                     </div>
                 </div>
 
                 <div class="progress">
                     <div class="progress-bar progress-bar-success" style="width:85%">
-                        Java
+                        <h3>Java</h3>
                     </div>
                 </div>
 
                 <div class="progress">
                     <div class="progress-bar progress-bar-danger" style="width:35%">
-                        C / C++
+                        <h3>C / C++</h3>
                     </div>
                 </div>
 
@@ -169,126 +162,43 @@
                     <li>Android SDK</li>
                 </ul>
             </p>
+			</div>
+		</div>
+	</div>
+</section>
 
-            <a href="resources/etruong-resume.pdf" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-eye"></i> View Resume</a>
-        </div>
-    </div>
-</div>
+<section id="work">
+	<div class="container-fluid container-block bg-dark">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2>MY WORK</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+</section>
 
-<div class="container-fluid container-pad" id="projects">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-            <h2>Projects</h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-            <a href="img/markbook.jpg" data-lightbox="markbook">
-            	<img class="project-img" style="background:center url('img/markbook.jpg') no-repeat; width: 100%; background-size: cover" />
-            </a>
-        </div>
-        <div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-            <h3>Mark Book Plus<br><small>Bronte College, April 2014 - May 2014</small></h3>
-            <p>
-            Screenshot of the mark book web application I created when I was working for Bronte College. Designed to be very easy-to-use for people with little computer proficiency. It was built using AngularJS and fully integrated into the school's main database.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-        	<a href="img/graveblade.jpg" data-lightbox="graveblade">
-            	<img class="project-img" style="background:center url('img/graveblade.jpg') no-repeat; width: 100%; background-size: cover" />
-            </a>
-        </div>
-        <div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-            <h3>GraveBlade<br><small>August 2013 - September 2013</small></h3>
-            <p>
-            GraveBlade is a 2D platformer game consisting of RPG elements such as leveling and equipments.
-            It is written in Java and built using the <b>LibGDX</b> development framework, which allows for cross-platform deployments to both PC and Android.<br /><br />
-            <a href="https://github.com/Phaerical/GraveBlade" target="_blank" class="btn btn-primary"><i class="fa fa-github fa-lg"></i> View on GitHub</a>
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <hr>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
-        	<a href="img/template.png" data-lightbox="flatdesign">
-            	<img class="project-img" style="background:center top url('img/template.png') no-repeat; width: 100%; background-size: cover" />
-            </a>
-        </div>
-        <div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-12">
-            <h3>Flat Design Template<br><small>August 2013</small></h3>
-            <p>
-            Simple website template inspired by the trending flat design concept. This site was developed in HTML5 with bootstrap, meaning it is fully responsive and can be viewed from mobile devices. It features a rotating carousel banner and responsive, collapsible navigation bar.<br /><br />
-            <a href="http://phaerical.zxq.net" target="_blank" class="btn btn-primary"><i class="fa fa-eye fa-lg"></i> View Demo</a>
-            </p>
-        </div>
-    </div>
-</div>
+<section id="contact">
+	<div class="container-fluid container-block bg-light">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2>CONTACT ME</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+</section>
 
-<div class="container-fluid container-pad container-red" id="contact">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-            <h3>Contact Me</h3>
-            <p>Feel free to send me any questions, concerns, or comments at <b>edward.truong.12@gmail.com</b><br /><br />
-            <a href="mailto:edward.truong.12@gmail.com" class="btn btn-outline btn-lg">CONTACT</a>
-            <!--<form>
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="NAME" />
-                </div>
-                <div class="form-group">
-                    <input class="form-control" type="text" placeholder="EMAIL" />
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="MESSAGE" rows="6"></textarea>
-                </div>
-                <button class="btn btn-outline btn-lg">SEND</button>
-            </form>-->
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid container-pad">
-    <div class="row">
-        <div class="col-sm-10 col-sm-offset-1">
-            <p> </p>
-        </div>
-    </div>
-</div>
-
-<div id="sidebar" data-spy="affix" data-offset-top="500">
-    <ul class="nav">
-        <li class="active"><a href="#top" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
-            title="Back to Top"><i class="fa fa-home fa-2x fa-fw"></i></a></li>
-        <li><a href="#about" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
-            title="About Me"><i class="fa fa-user fa-2x fa-fw"></i></a></li>
-        <li><a href="#skills" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
-            title="Skills"><i class="fa fa-bar-chart-o fa-2x fa-fw"></i></a></li>
-        <li><a href="#projects" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
-            title="Projects"><i class="fa fa-laptop fa-2x fa-fw"></i></a></li>
-        <li><a href="#contact" class="tool-tip scroll" data-toggle="tooltip" data-placement="left"
-            title="Contact"><i class="fa fa-envelope fa-2x fa-fw"></i></a></li>
-        <hr>
-        <li><a href="https://github.com/Phaerical" target="_blank" class="tool-tip"
-            data-toggle="tooltip" data-placement="left" title="GitHub">
-            <i class="fa fa-github fa-2x fa-fw"></i></a>
-        </li>
-        <li><a href="resources/etruong-resume.pdf" target="_blank" class="tool-tip"
-            data-toggle="tooltip" data-placement="left" title="Resume">
-            <i class="fa fa-file-text fa-2x fa-fw"></i></a>
-        </li>
-    </ul>
-</div>
-
+<footer id="footer">
+	<div class="container-fluid container-block">
+		<div class="row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<h2>FOOTER</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
 </body>
 
