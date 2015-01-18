@@ -49,7 +49,7 @@
         		$('.landing-button').fadeIn();
         	}
 
-        	if (pos + $(this).height() / 3 > $('#skills').offset().top)
+        	if (pos + $(this).height() * 2/3 > $('#skills').offset().top)
         	{
         		$('.progress-bar').each (function (index) {
         			$(this).width ($(this).attr('value') + '%');
