@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
     <!-- Font -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
@@ -35,12 +35,50 @@
                 $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
             });
         });
+
+        $(window).scroll(function(event){
+        	var pos = $(this).scrollTop ();
+        	if (pos > $('.landing-img').height() / 3)
+        	{
+        		$('.fixed-nav').slideDown("fast");
+        		$('.landing-button').fadeOut();
+        	}
+        	else
+        	{
+        		$('.fixed-nav').slideUp("fast");
+        		$('.landing-button').fadeIn();
+        	}
+
+        	if (pos + $(this).height() / 3 > $('#skills').offset().top)
+        	{
+        		$('.progress-bar').each (function (index) {
+        			$(this).width ($(this).attr('value') + '%');
+        			$("h3").fadeIn();
+        		});
+        	}
+        	else
+        	{
+        		$('.progress-bar').width (0);
+        		$('.progress-bar h3').fadeOut ();
+        	}
+        });
     </script>
 </head>
 
 <body>
 
 <div class="bg-img"></div>
+
+<div class="fixed-nav">
+	<ul>
+		<li><a href="#top" class="scroll">HOME</a></li>
+		<li><a href="#about" class="scroll">ABOUT</a></li>
+		<li><a href="#skills" class="scroll">SKILLS</a></li>
+		<li><a href="#work" class="scroll">WORK</a></li>
+		<li><a href="#footer" class="scroll">CONTACT</a></li>
+		<li><a href="resources/etruong-resume.pdf" target="_blank">RESUME</a></li>
+	</ul>
+</div>
 
 <header id="top" class="landing-img">
 	<div class="landing-bg">
@@ -50,7 +88,7 @@
 				<li><a href="#skills" class="scroll">SKILLS</a></li>
 				<li><a href="#work" class="scroll">WORK</a></li>
 				<li><a href="#footer" class="scroll">CONTACT</a></li>
-				<li><a href="#">RESUME</a></li>
+				<li><a href="resources/etruong-resume.pdf" target="_blank">RESUME</a></li>
 			</ul>
 		</div>
 		<div class="landing-text">
@@ -76,7 +114,7 @@
 
 	<div class="container-fluid container-block bg-color">
 		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-sm-10 col-sm-offset-1">
 		        <div class="col-sm-4">
 		        	<div class="small-block">
 		                <div class="circle"><i class="fa fa-pencil fa-3x"></i></div>
@@ -112,43 +150,43 @@
             	<h2>SKILLS</h2>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger" style="width:90%">
+                    <div class="progress-bar progress-bar-danger" value="90">
                         <h3>HTML / CSS</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger" style="width:80%">
+                    <div class="progress-bar progress-bar-danger" value="80">
                         <h3>JavaScript / jQuery</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger" style="width:85%">
+                    <div class="progress-bar progress-bar-danger" value="85">
                         <h3>Java</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger" style="width:60%">
+                    <div class="progress-bar progress-bar-danger" value="60">
                         <h3>PHP</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger" style="width:70%">
+                    <div class="progress-bar progress-bar-danger" value="70">
                         <h3>SQL</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger" style="width:45%">
+                    <div class="progress-bar progress-bar-danger" value="45">
                         <h3>Ruby on Rails</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger" style="width:60%">
+                    <div class="progress-bar progress-bar-danger" value="60">
                         <h3>C / C++</h3>
                     </div>
                 </div>
@@ -219,7 +257,7 @@
 	            </a>
 				<h3>Pivotal Command Center<br><small>Pivotal Labs, September 2014 - November 2014</small></h3>
 	            <p>
-	            At Pivotal Labs, I was part of the team which developed this software. The software allows you to configure, deploy, and monitor hadoop clusters. The application was built with Backbone.js and Ruby on Rails.
+	            At Pivotal Labs, I was part of the team which developed this software. The software allows you to configure, deploy, and monitor hadoop clusters. The application was built with <b>Backbone.js</b> and <b>Ruby on Rails</b>.
 	            </p>
 			</div>
 			<div class="col-sm-4 pad">
@@ -228,7 +266,7 @@
 	            </a>
 				<h3>Mark Book Plus<br><small>Bronte College, April 2014 - May 2014</small></h3>
 	            <p>
-	            The mark book web application I created when I was working for Bronte College. Designed to be very easy-to-use for people with little computer proficiency. It was built using AngularJS and fully integrated into the school's main database.
+	            The mark book web application I created when I was working for Bronte College. Designed to be very easy-to-use for people with little computer proficiency. It was built using <b>AngularJS</b> and fully integrated into the school's main database.
 	            </p>
 			</div>
 		</div>
@@ -243,7 +281,7 @@
 	            </h3>
 	            <p>
 	            GraveBlade is a 2D platformer game consisting of RPG elements such as leveling and equipments.
-	            It is written in Java and built using the <b>LibGDX</b> development framework, which allows for cross-platform deployments to both PC and Android.<br /><br />
+	            It is written in <b>Java</b> and built using the <b>LibGDX</b> development framework, which allows for cross-platform deployments to both PC and Android.<br /><br />
 	            </p>
 			</div>
 			<div class="col-sm-4 pad">
@@ -252,7 +290,7 @@
 				</a>
 	            <h3>Flat Design Template<br><small>August 2013</small></h3>
 	            <p>
-	            Simple website template inspired by the trending flat design concept. This site was developed in HTML5 with bootstrap, meaning it is fully responsive and can be viewed from mobile devices. It features a rotating carousel banner and responsive, collapsible navigation bar.<br /><br />
+	            Simple website template inspired by the trending flat design concept. This site was developed in <b>HTML5</b> with <b>Bootstrap</b>, meaning it is fully responsive and can be viewed from mobile devices. It features a rotating carousel banner and responsive, collapsible navigation bar.<br /><br />
 	            </p>
 			</div>
 		</div>
@@ -265,10 +303,10 @@
 			<div class="col-sm-3 col-sm-offset-1">
 				<h2>LINKS</h2>
 				<ul>
-					<li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
-					<li><a href=""><i class="fa fa-github fa-2x"></i></a></li>
-					<li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
-					<li><a href=""><i class="fa fa-file-text fa-2x"></i></a></li>
+					<!--<li><a href="" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>-->
+					<li><a href="https://github.com/Phaerical" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+					<!--<li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>-->
+					<li><a href="resources/etruong-resume.pdf" target="_blank"><i class="fa fa-file-text fa-2x"></i></a></li>
 				</ul>
 			</div>
 
@@ -279,7 +317,7 @@
 			</div>
 
 			<div class="col-sm-3">
-				<h2>TO TOP</h2>
+				<h2>TOP</h2>
 				<ul><li>
 					<a href="#top" class="scroll"><i class="fa fa-chevron-up fa-2x"></i></a>
 				</li></ul>
