@@ -20,6 +20,10 @@
     <!-- Custom Styles -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
+    <!-- Light Box -->
+    <script src="js/lightbox.min.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css">
+
     <title>Edward Truong - Portfolio</title>
 
     <script>
@@ -45,7 +49,8 @@
 				<li><a href="#about" class="scroll">ABOUT</a></li>
 				<li><a href="#skills" class="scroll">SKILLS</a></li>
 				<li><a href="#work" class="scroll">WORK</a></li>
-				<li><a href="#contact" class="scroll">CONTACT</a></li>
+				<li><a href="#footer" class="scroll">CONTACT</a></li>
+				<li><a href="#">RESUME</a></li>
 			</ul>
 		</div>
 		<div class="landing-text">
@@ -61,24 +66,22 @@
 <section id="about">
 	<div class="container-fluid container-block bg-light">
 		<div class="row">
-			<div class="col-sm-6 col-sm-offset-1">
+			<div class="col-sm-8 col-sm-offset-2">
 				<h2>ABOUT ME</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-			<div class="col-sm-4">
-				<div class="profile-picture"></div>
+				<p>My name is Edward Truong and I'm currently a third year student studying Computer Science at the University of Waterloo.<br><br>
+                I really enjoy doing digital design and programming. When I was at the age of 11, I grew a passion for coding and it never once disappeared. At first, I started designing and developing simple websites. From there, I began expanding my knowledge by trying out different programming languages and working on wide variety of projects. On my spare time, I still find myself messing around with different types of projects and learning more about new and upcoming technologies or trends.</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="container-fluid container-block bg-color">
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
+			<div class="col-sm-8 col-sm-offset-2">
 		        <div class="col-sm-4">
 		        	<div class="small-block">
 		                <div class="circle"><i class="fa fa-pencil fa-3x"></i></div>
 		                <h3>DESIGNING</h3>
-		                <p>Asthetics are very important. I always try to keep on top of recent design trends, looking for things to incorporate into my projects.</p>
+		                <p>Asthetics are very important to me. I always look at latest design trends for things to incorporate into my projects.</p>
 		            </div>
 		        </div>
 
@@ -105,96 +108,181 @@
 <section id="skills">
 	<div class="container-fluid container-block bg-light">
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-            <h2>SKILLS</h2>
-            <p>
-                Programming Languages
+			<div class="col-sm-8 col-sm-offset-2">
+            	<h2>SKILLS</h2>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-success" style="width:90%">
-                        <h3>HTML</h3>
+                    <div class="progress-bar progress-bar-danger" style="width:90%">
+                        <h3>HTML / CSS</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-info" style="width:75%">
-                        <h3>CSS</h3>
+                    <div class="progress-bar progress-bar-danger" style="width:80%">
+                        <h3>JavaScript / jQuery</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-warning" style="width:60%">
-                        <h3>PHP</h3>
-                    </div>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar progress-bar-warning" style="width:65%">
-                        <h3>JavaScript & jQuery</h3>
-                    </div>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" style="width:70%">
-                        <h3>SQL</h3>
-                    </div>
-                </div>
-
-                <div class="progress">
-                    <div class="progress-bar progress-bar-success" style="width:85%">
+                    <div class="progress-bar progress-bar-danger" style="width:85%">
                         <h3>Java</h3>
                     </div>
                 </div>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-danger" style="width:35%">
-                        <h3>C / C++</h3>
+                    <div class="progress-bar progress-bar-danger" style="width:60%">
+                        <h3>PHP</h3>
                     </div>
                 </div>
 
-                Frameworks & Others
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" style="width:70%">
+                        <h3>SQL</h3>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" style="width:45%">
+                        <h3>Ruby on Rails</h3>
+                    </div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" style="width:60%">
+                        <h3>C / C++</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-4 col-sm-offset-2">
+                <h3>Operating Systems & Platforms</h3>
+                <ul>
+                	<li>Windows, OSX, Linux, Web, Android</li>
+                </ul>
+
+                <h3>Software</h3>
+                <ul>
+                	<li>Adobe Photoshop, Adobe Illustrator</li>
+                	<li>Sublime Text</li>
+                	<li>Eclipse</li>
+                	<li>Git</li>
+                	<li>SVN</li>
+                </ul>
+            </div>
+        	<div class="col-sm-4">
+                <h3>Frameworks & Others</h3>
                 <ul>
                     <li>Bootstrap</li>
                     <li>NodeJS</li>
                     <li>AngularJS</li>
+                    <li>Ember</li>
+                    <li>Backbone.js</li>
+                    <li>Jasmine, Mocha, Sinon, Chai</li>
                     <li>JavaServer Faces (JSF)</li>
                     <li>IceFaces</li>
                     <li>Android SDK</li>
                 </ul>
-            </p>
 			</div>
 		</div>
 	</div>
 </section>
 
 <section id="work">
-	<div class="container-fluid container-block bg-dark">
+	<div class="container-fluid container-block">
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-				<h2>MY WORK</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="col-sm-8 col-sm-offset-2">
+				<h2>WORK EXPERIENCE</h2>
+				<h3>Agile Software Engineer, Pivotal Labs, Toronto, ON <small>September 2014 - December 2014</small></h3>
+				<ul>
+					<li>Performed test driven development and worked with Jasmine and Mocha testing framework</li>
+					<li>Participated in agile work environment, engaged in pair programming</li>
+					<li>Developed web application for installing, managing, and monitoring clusters</li>
+					<li>Contributed to open source project</li>
+				</ul>
+
+				<h3>Software Developer, Bronte College, Mississauga, ON <small>January 2014 - May 2014</small></h3>
+				<ul>
+					<li>Implemented features, bug fixes for existing customer relationship management software</li>
+					<li>Developed AngularJS web application to streamline the process for proficiency test taking & marking</li>
+					<li>Built web application that replaces existing marking & class management software for teachers</li>
+					<li>Designed database structures for new applications that integrate fully into production database</li>
+				</ul>
 			</div>
 		</div>
 	</div>
-</section>
-
-<section id="contact">
 	<div class="container-fluid container-block bg-light">
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-				<h2>CONTACT ME</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="col-sm-4 col-sm-offset-2 pad">
+	            <a href="img/pcc.png" data-lightbox="pcc">
+	            	<div class="img-block" style="background-image: url(img/pcc.png)"></div>
+	            </a>
+				<h3>Pivotal Command Center<br><small>Pivotal Labs, September 2014 - November 2014</small></h3>
+	            <p>
+	            At Pivotal Labs, I was part of the team which developed this software. The software allows you to configure, deploy, and monitor hadoop clusters. The application was built with Backbone.js and Ruby on Rails.
+	            </p>
+			</div>
+			<div class="col-sm-4 pad">
+				<a href="img/markbook.jpg" data-lightbox="markbook">
+	            	<div class="img-block" style="background-image: url(img/markbook.jpg)"></div>
+	            </a>
+				<h3>Mark Book Plus<br><small>Bronte College, April 2014 - May 2014</small></h3>
+	            <p>
+	            The mark book web application I created when I was working for Bronte College. Designed to be very easy-to-use for people with little computer proficiency. It was built using AngularJS and fully integrated into the school's main database.
+	            </p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-sm-offset-2 pad">
+				<a href="img/graveblade.jpg" data-lightbox="graveblade">
+					<div class="img-block" style="background-image: url(img/graveblade.jpg)"></div>
+				</a>
+	            <h3>GraveBlade
+	            	<a href="https://github.com/Phaerical/GraveBlade" target="_blank" class="btn btn-primary pull-right"><i class="fa fa-github fa-lg"></i> View on GitHub</a><br>
+	            	<small>August 2013 - September 2013</small>
+	            </h3>
+	            <p>
+	            GraveBlade is a 2D platformer game consisting of RPG elements such as leveling and equipments.
+	            It is written in Java and built using the <b>LibGDX</b> development framework, which allows for cross-platform deployments to both PC and Android.<br /><br />
+	            </p>
+			</div>
+			<div class="col-sm-4 pad">
+				<a href="img/template.png" data-lightbox="template">
+					<div class="img-block" style="background-image: url(img/template.png)"></div>
+				</a>
+	            <h3>Flat Design Template<br><small>August 2013</small></h3>
+	            <p>
+	            Simple website template inspired by the trending flat design concept. This site was developed in HTML5 with bootstrap, meaning it is fully responsive and can be viewed from mobile devices. It features a rotating carousel banner and responsive, collapsible navigation bar.<br /><br />
+	            </p>
 			</div>
 		</div>
 	</div>
 </section>
 
 <footer id="footer">
-	<div class="container-fluid container-block">
+	<div class="container-fluid container-block bg-dark">
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1">
-				<h2>FOOTER</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="col-sm-3 col-sm-offset-1">
+				<h2>LINKS</h2>
+				<ul>
+					<li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+					<li><a href=""><i class="fa fa-github fa-2x"></i></a></li>
+					<li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+					<li><a href=""><i class="fa fa-file-text fa-2x"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<h2>CONTACT</h2>
+				edward.truong.12@gmail.com<br>
+				(226) 750 - 8161
+			</div>
+
+			<div class="col-sm-3">
+				<h2>TO TOP</h2>
+				<ul><li>
+					<a href="#top" class="scroll"><i class="fa fa-chevron-up fa-2x"></i></a>
+				</li></ul>
 			</div>
 		</div>
 	</div>

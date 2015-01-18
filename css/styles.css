@@ -10,9 +10,20 @@ body {
 	font-weight: 300;
 	line-height: 2em;
 	font-size: 18px;
-	overflow-x: hidden;
 	color: #eee;
 	background-color: #000;
+}
+
+.container-fluid .row {
+	margin: 0;
+}
+
+.text-light {
+	color: #eee;
+}
+
+.text-dark {
+	color: #111;
 }
 
 .bg-light {
@@ -42,9 +53,13 @@ body {
 	box-shadow: 0 0 5px rgba(0,0,0,0.2);
 }
 
+.pad {
+	padding: 40px;
+}
+
 .bg-img {
 	position: fixed;
-	background: url('../img/header6.jpg') no-repeat center center scroll;
+	background: url('../img/bg.jpg') no-repeat center center scroll;
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -153,18 +168,6 @@ body {
 	margin-bottom: 25px;
 }
 
-.profile-picture {
-	background: url('../img/profile.jpg') no-repeat center center scroll;
-	background-size: cover;
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	margin-left: auto;
-	margin-right: auto;
-	border: 2px solid #fff;
-	box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
 .small-block {
 	text-align: center;
 	padding: 0 25px;
@@ -177,13 +180,68 @@ body {
 }
 
 .progress {
-	height: 30px;
-
+	margin-top: 25px;
+	height: 40px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: #ccc;
 }
 
 .progress h3 {
 	margin: 0;
-	font-size: 18px;
-	padding: 6px 10px;
+	padding: 10px;
 	text-align: left;
+}
+
+.progress-bar {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: #5F758E;
+}
+
+#skills h3 {
+	font-size: 18px;
+}
+
+#work h3 {
+	margin-top: 50px;
+}
+
+#footer {
+	text-align: center;
+}
+
+#footer .container-block {
+	padding: 100px 0 200px 0;
+}
+
+#footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+#footer ul li {
+	display: inline-block;
+}
+
+#footer ul li a {
+	display: block;
+	color: #fff;
+	padding: 5px 10px;
+	transition: 0.2s ease-in-out all;
+}
+
+#footer ul li a:hover {
+	color: #333;
+}
+
+#footer ul li a:focus {
+	text-decoration: none;
+}
+
+.img-block {
+	border-radius: 5px;
+	background-size: cover;
+	width: 100%;
+	height: 250px;
 }
