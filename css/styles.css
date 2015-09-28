@@ -251,6 +251,10 @@ h1, h2, h3 {
 	margin-top: 50px;
 }
 
+#work b {
+	color: #F64747;
+}
+
 #footer {
 	text-align: center;
 }
