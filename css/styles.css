@@ -255,6 +255,10 @@ h1, h2, h3 {
 	color: #F64747;
 }
 
+#work .bg-light b {
+	color: #000;
+}
+
 #footer {
 	text-align: center;
 }
